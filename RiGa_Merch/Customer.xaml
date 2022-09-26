@@ -1,0 +1,60 @@
+﻿<Window x:Class="RiGa_Merch.Customer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiGa_Merch"
+        mc:Ignorable="d"
+        Icon="/RiGa_Icon.png"
+        Title="Rhino Games Merchandise System v1.0 - Customer" Height="616" Width="946" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="450"/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Border Margin="5,5,10,5" BorderBrush="Black" BorderThickness="1.5">
+                <DataGrid Name="CustomerTBl" BorderBrush="Black" BorderThickness="1" Margin="10"/>
+            </Border>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button  Background="#33415c" Foreground="White" x:Name="AddItemBTN" Margin="15" Content="Add Item" Click="AddItemBTN_Click" />
+                <Button  Background="#33415c" Foreground="White"  x:Name="UpdateBTN" Grid.Row="1" Margin="15" Content="Update" Click="UpdateBTN_Click"/>
+                <Button  Background="#33415c" Foreground="White" x:Name="DeleteBTN" Grid.Row="2" Margin="15" Content="Delete" Click="DeleteBTN_Click"/>
+                <Button  Background="#33415c" Foreground="White" x:Name="RealoadBTN" Grid.Row="3" Margin="15" Content="Reload" Click="RealoadBTN_Click"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="130"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Grid.Column="0" Margin="5" Background="#0466C8" x:Name="ProductBTN" Content="Product" Foreground="White" Click="ProductBTN_Click"/>
+            <Button Grid.Column="1" Margin="5" Background="#0353A4" x:Name="OrderBTN" Content="Orders" Foreground="White" Click="OrderBTN_Click"/>
+            <Button Grid.Column="2" Margin="5" Background="#023E7D" x:Name="CustomerBTN" Content="Customer" Foreground="White" Click="CustomerBTN_Click"/>
+            <Button Grid.Column="3" Margin="5" Background="#002855" x:Name="CategoryBTN" Content="Category" Foreground="White" Click="CategoryBTN_Click"/>
+            <Image Source="/Merch_Logo.png" Grid.Column="5"/>
+
+
+        </Grid>
+        <Border Background="#023E7D" BorderThickness="1" VerticalAlignment="Center" Width="700" Height="65"  BorderBrush="Black" Margin="10,8,10,0" Grid.Row="2"  >
+            <TextBlock Text="Customer" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20pt" Foreground="White" />
+        </Border>
+    </Grid>
+</Window>

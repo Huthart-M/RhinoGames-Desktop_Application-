@@ -1,0 +1,69 @@
+﻿<Window x:Class="RiGa_Merch.AddCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiGa_Merch"
+        mc:Ignorable="d"
+        Icon="/RiGa_Icon.png"
+        Title="Add Customer" Height="520" Width="520" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="240"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="0" Grid.Column = "0" Text = "Customer Name :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="1" Grid.Column = "0" Text = "Customer Surname :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="2" Grid.Column = "0" Text = "Customer House Number :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="3" Grid.Column = "0" Text = "Customer Street Name :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="4" Grid.Column = "0" Text = "Customer City :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="5" Grid.Column = "0" Text = "Customer Country :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="6" Grid.Column = "0" Text = "Customer Post Code :" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="7" Grid.Column = "0" Text = "Customer Home Tel Number :" Width="161" />
+            <TextBlock VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="8" Grid.Column = "0" Text = "Customer Mobile Number:" />
+            
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="0" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "NameEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="1" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "SurnameEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="2" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "HouseNumEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="3" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "StreetNameEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="4" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "CityEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="5" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "CountryEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="6" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "PostCodeEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="7" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "HomeTelNumEnt"/>
+            <TextBox VerticalAlignment = "Center" HorizontalAlignment = "Center" Grid.Row ="8" Grid.Column = "1" BorderBrush = "Black" BorderThickness = "1" Width = "150" Height = "30" x:Name = "MobileNumEnt"/>
+        
+        </Grid>
+        <Image Source="/Merch_Logo.png" />
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button VerticalAlignment ="Center" HorizontalAlignment = "Center" Grid.Column = "0" Background = "Red" Height = "50" Width = "150" Content="Cancel" x:Name="CanelBtn" Click="CanelBtn_Click"/>
+            <Button VerticalAlignment ="Center" HorizontalAlignment = "Center" Grid.Column = "1" Background = "Green" Height = "50" Width = "150" Content="Enter" x:Name="EnterBtn" Click="EnterBtn_Click"/>
+            
+        </Grid>
+    </Grid>
+</Window>

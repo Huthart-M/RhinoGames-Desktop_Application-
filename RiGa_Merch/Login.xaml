@@ -1,0 +1,40 @@
+﻿<Window x:Class="RiGa_Merch.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiGa_Merch"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/RiGa_Icon.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="1" BorderBrush="Black" Margin="30" BorderThickness="2">
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Text="User Name :" FontSize="20pt" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,47,0,0"  />
+                <TextBox Grid.Column="1" BorderBrush="Black" BorderThickness="1.5" Margin="0,50,40,44" x:Name="UserTB"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Password :" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20pt" FontWeight="Bold" Margin="75,0,0,0"/>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="PasswordEnt" BorderBrush="Black" Margin="0,46,40,46"  BorderThickness="1.5"/>
+
+                <Button  Content="Login" Background="Green" x:Name="EnterBTN" Click="EnterBTN_Click" Grid.Column="1" Grid.Row="2" Margin="30,40,30,40" FontSize="14" FontWeight="DemiBold"  BorderBrush="Black" BorderThickness="1.5" />
+                <Button x:Name="ClearBTN" Click="ClearBTN_Click"  Content="Clear" Margin="30,40,30,40" Background="Red" BorderBrush="Black" BorderThickness="1.5" Grid.Column="0" Grid.Row="2" FontWeight="DemiBold" />
+                <!--<PasswordBox Grid.Column="1" x:Name="PasswordEnt" Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="0,46,40,46"/>-->
+            </Grid>
+        </Border>
+        <StackPanel Grid.Column="0">
+            <Image Source="/Merch_Logo.png" Height="449"/>
+        </StackPanel>
+    </Grid>
+</Window>
